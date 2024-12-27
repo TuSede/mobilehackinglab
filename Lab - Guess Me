@@ -35,7 +35,7 @@ When you tap the link found in the local HTML file rendered in the WebView, it w
 Webview Screen - Remote
 Identify deep link vulnerability
 First things first, let’s investigate the AndroidManifest.xml file to get an overview of the application entry points and, where potential deep links might exist.
-
+```php
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:versionCode="1"
@@ -82,6 +82,7 @@ First things first, let’s investigate the AndroidManifest.xml file to get an o
         <!-- ... -->
     </application>
 </manifest>
+```
 Copy
 For this section, we will focus on the WebviewActivity to see how it behaves and what we can do with it.
 
